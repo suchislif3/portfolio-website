@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
-import Logo from "../../public/images/logo_small.png";
+import Logo from "../../../public/images/logo_small.png";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 import {
