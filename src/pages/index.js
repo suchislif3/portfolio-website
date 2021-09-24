@@ -1,13 +1,6 @@
-import { Fragment } from "react";
-import Header from "../components/Header";
-
+import { Layout } from "../layout/Layout";
 const Home = () => {
-  return (
-    <Fragment>
-      <h1>Helloka</h1>
-      <Header></Header>
-    </Fragment>
-  );
+  return <Layout></Layout>;
 };
 
 export default Home;
