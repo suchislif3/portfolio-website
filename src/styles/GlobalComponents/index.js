@@ -1,21 +1,21 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
-  display: ${(props) => (props.grid ? "grid" : "flex")};
-  flex-direction: ${(props) => (props.row ? "row" : "column")};
-  padding: ${(props) => (props.nopadding ? "0" : "32px 48px 0")};
+  display: ${({grid}) => (grid ? "grid" : "flex")};
+  flex-direction: ${({row}) => (row ? "row" : "column")};
+  padding: ${({nopadding}) => (nopadding ? "0" : "32px 48px 0")};
   margin: 0 auto;
   max-width: 1040px;
   box-sizing: content-box;
   position: relative;
   overflow: hidden;
   grid-template-columns: 1fr 1fr;
-  @media ${(props) => props.theme.breakpoints.md} {
+  @media ${({theme}) => theme.breakpoints.md} {
     padding: 24px 48px 0;
     flex-direction: column;
   }
-  @media ${(props) => props.theme.breakpoints.sm} {
-    padding: ${(props) => (props.nopadding ? "0" : "16px 16px 0")};
+  @media ${({theme}) => theme.breakpoints.sm} {
+    padding: ${({nopadding}) => (nopadding ? "0" : "16px 16px 0")};
     width: calc(100vw - 32px);
     flex-direction: column;
   }
@@ -32,23 +32,22 @@ export const SectionTitle = styled.h2`
     #ffffff 18.77%,
     rgba(255, 255, 255, 0.66) 60.15%
   );
+  background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 16px;
-  padding: ${(props) => (props.main ? "58px 0 16px" : "0")};
-  @media ${(props) => props.theme.breakpoints.md} {
-    font-size: ${(props) => (props.main ? "46px" : "40px")};
-    line-height: ${(props) => (props.main ? "56px" : "48px")};
+  padding: ${({main}) => (main ? "58px 0 16px" : "0")};
+  @media ${({theme}) => theme.breakpoints.md} {
+    font-size: ${({main}) => (main ? "46px" : "40px")};
+    line-height: ${({main}) => (main ? "56px" : "48px")};
     margin-bottom: 12px;
-    padding: ${(props) => (props.main ? "40px 0 12px" : "0")};
+    padding: ${({main}) => (main ? "40px 0 12px" : "0")};
   }
-  @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 32px;
-    line-height: 40px;
-    font-size: ${(props) => (props.main ? "28px" : "20px")};
-    line-height: ${(props) => (props.main ? "32px" : "40px")};
+  @media ${({theme}) => theme.breakpoints.sm} {
+    font-size: ${({main}) => (main ? "28px" : "20px")};
+    line-height: ${({main}) => (main ? "32px" : "40px")};
     margin-bottom: 8px;
-    padding: ${(props) => (props.main ? "16px 0 8px" : "0")};
+    padding: ${({main}) => (main ? "16px 0 8px" : "0")};
     max-width: 100%;
   }
 `;
@@ -60,13 +59,13 @@ export const SectionText = styled.p`
   font-weight: 300;
   padding-bottom: 3.6rem;
   color: rgba(255, 255, 255, 0.5);
-  @media ${(props) => props.theme.breakpoints.md} {
+  @media ${({theme}) => theme.breakpoints.md} {
     max-width: 670px;
     font-size: 20px;
     line-height: 32px;
     padding-bottom: 24px;
   }
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media ${({theme}) => theme.breakpoints.sm} {
     font-size: 16px;
     line-height: 24px;
     padding-bottom: 16px;
@@ -93,13 +92,13 @@ export const ButtonBack = styled.div`
   position: relative;
   overflow: hidden;
   opacity: ${({ disabled }) => (disabled ? ".5" : "1")};
-  @media ${(props) => props.theme.breakpoints.md} {
+  @media ${({theme}) => theme.breakpoints.md} {
     width: ${({ alt }) => (alt ? "150px" : "184px")};
     height: ${({ alt }) => (alt ? "52px" : "48px")};
     font-size: ${({ alt }) => (alt ? "20px" : "16px")};
     margin-bottom: ${({ alt }) => (alt ? "0" : "64px")};
   }
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media ${({theme}) => theme.breakpoints.sm} {
     width: 100%;
     height: 32px;
     font-size: 14px;
@@ -149,10 +148,10 @@ export const ButtonFront = styled.button`
     box-shadow: inset 0px 2px 1px rgba(46, 49, 55, 0.15),
       inset 0px 0px 4px rgba(20, 20, 55, 0.3);
   }
-  @media ${(props) => props.theme.breakpoints.md} {
+  @media ${({theme}) => theme.breakpoints.md} {
     font-size: ${({ alt }) => (alt ? "20px" : "16px")};
   }
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media ${({theme}) => theme.breakpoints.sm} {
     font-size: 14px;
   }
 `;

@@ -9,7 +9,7 @@ export const Container = styled.div`
   padding: 1rem;
   padding-top: 2rem;
 
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media ${({theme}) => theme.breakpoints.sm} {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 60px);
@@ -28,7 +28,7 @@ export const Div1 = styled.div`
   display: flex;
   flex-direction: row;
   align-content: center;
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media ${({theme}) => theme.breakpoints.sm} {
     grid-area: 1 / 1 / 2 / 4;
   }
 `;
@@ -37,7 +37,7 @@ export const Div2 = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media ${({theme}) => theme.breakpoints.sm} {
     grid-area: 2 / 2 / 3 / 6;
   }
 `;
@@ -46,7 +46,7 @@ export const Div3 = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media ${({theme}) => theme.breakpoints.sm} {
     align-items: center;
     grid-area: 1 / 5 / 2 / 7;
   }
@@ -63,13 +63,13 @@ export const NavLink = styled.a`
     opacity: 1;
     cursor: pointer;
   }
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media ${({theme}) => theme.breakpoints.sm} {
     padding: 0.5rem;
   }
 `;
 
 /// DropDown Contact
-export const ContactDropDown = styled.button`
+/* export const ContactDropDown = styled.button`
   border: none;
   display: flex;
   position: relative;
@@ -94,7 +94,7 @@ export const ContactDropDown = styled.button`
   @media ${(props) => props.theme.breakpoints.md} {
     padding: 0;
   }
-`;
+`; */
 
 /* export const NavProductsIcon = styled(IoIosArrowDropdown)`
   margin-left: 8px;
