@@ -6,7 +6,7 @@ import {
 } from "../../styles/GlobalComponents";
 import Button from "../../styles/GlobalComponents/Button";
 import { LeftSection } from "./HeroStyles";
-import SoftDevAnimation from "../Animation/TypeAnimation/SoftDevAnimation";
+import SoftDevAnimation from "./SoftDevAnimation";
 
 const Hero = (props) => (
   <Section row nopadding>

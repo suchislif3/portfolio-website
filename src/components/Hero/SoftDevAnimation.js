@@ -1,4 +1,4 @@
-import { Wrapper, StaticText, DynamicTexts } from "./SoftDevAnimationStyles";
+import { Wrapper, StaticText, DynamicTexts } from "./HeroStyles";
 import { Fragment } from "react";
 
 const SoftDevAnimation = () => {
