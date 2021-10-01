@@ -11,7 +11,7 @@ export const Section = styled.section`
   overflow: hidden;
   grid-template-columns: 1fr 1fr;
   @media ${({theme}) => theme.breakpoints.md} {
-    padding: 24px 48px 0;
+    padding: ${({nopadding}) => (nopadding ? "0" : "24px 32px 0")};
     flex-direction: column;
   }
   @media ${({theme}) => theme.breakpoints.sm} {
@@ -36,18 +36,18 @@ export const SectionTitle = styled.h2`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 16px;
-  padding: ${({main}) => (main ? "58px 0 16px" : "0")};
+  padding: ${({main}) => (main ? "16px 0 16px" : "0")};
   @media ${({theme}) => theme.breakpoints.md} {
     font-size: ${({main}) => (main ? "46px" : "40px")};
     line-height: ${({main}) => (main ? "56px" : "48px")};
     margin-bottom: 12px;
-    padding: ${({main}) => (main ? "40px 0 12px" : "0")};
+    padding: ${({main}) => (main ? "12px 0 12px" : "0")};
   }
   @media ${({theme}) => theme.breakpoints.sm} {
     font-size: ${({main}) => (main ? "28px" : "20px")};
     line-height: ${({main}) => (main ? "32px" : "40px")};
     margin-bottom: 8px;
-    padding: ${({main}) => (main ? "16px 0 8px" : "0")};
+    padding: ${({main}) => (main ? "8px 0 8px" : "0")};
     max-width: 100%;
   }
 `;
