@@ -1,5 +1,5 @@
 //import { IoIosArrowDropdown } from 'react-icons/io';
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const Container = styled.div`
   display: grid;
@@ -9,12 +9,30 @@ export const Container = styled.div`
   padding: 1rem;
   padding-top: 2rem;
 
-  @media ${({theme}) => theme.breakpoints.sm} {
+  @media ${({ theme }) => theme.breakpoints.sm} {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 60px);
     grid-column-gap: 0.5rem;
     grid-row-gap: 0.5rem;
+  }
+`;
+
+const animateStroke = keyframes`
+  0%{
+    stroke-dashoffset: 122;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+`;
+
+export const LogoDiv = styled.div`
+  display: flex;
+  align-items: center;
+  path {
+    stroke-dasharray: 122;
+    animation: ${animateStroke} 6s cubic-bezier(0.6, 1, 0.32, 1);
   }
 `;
 
@@ -24,29 +42,31 @@ export const Span = styled.span`
 `;
 
 export const Div1 = styled.div`
-  grid-area: 1 / 1 / 2 / 3;
+  grid-area: 1 / 1 / 2 / 2;
   display: flex;
   flex-direction: row;
   align-content: center;
-  @media ${({theme}) => theme.breakpoints.sm} {
+  @media ${({ theme }) => theme.breakpoints.sm} {
     grid-area: 1 / 1 / 2 / 4;
   }
 `;
+
 export const Div2 = styled.div`
-  grid-area: 1 / 3 / 2 / 5;
+  grid-area: 1 / 2 / 2 / 5;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  @media ${({theme}) => theme.breakpoints.sm} {
-    grid-area: 2 / 2 / 3 / 6;
+  @media ${({ theme }) => theme.breakpoints.sm} {
+    grid-area: 2 / 1 / 3 / 7;
   }
 `;
+
 export const Div3 = styled.div`
   grid-area: 1 / 6 / 2 / 7;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  @media ${({theme}) => theme.breakpoints.sm} {
+  @media ${({ theme }) => theme.breakpoints.sm} {
     align-items: center;
     grid-area: 1 / 5 / 2 / 7;
   }
@@ -63,7 +83,7 @@ export const NavLink = styled.a`
     opacity: 1;
     cursor: pointer;
   }
-  @media ${({theme}) => theme.breakpoints.sm} {
+  @media ${({ theme }) => theme.breakpoints.sm} {
     padding: 0.5rem;
   }
 `;

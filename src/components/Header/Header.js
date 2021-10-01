@@ -1,7 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
 import React from "react";
-import Logo from "../../../public/images/logo_small.png";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 import {
@@ -13,13 +11,14 @@ import {
   NavLink,
   SocialIcons,
 } from "./HeaderStyles";
+import Logo from "./Logo";
 
 const Header = () => (
   <Container>
     <Div1>
       <Link href="/">
         <a style={{ display: "flex", alignItems: "center", color: "white" }}>
-          <Image src={Logo} alt="Logo" srcSet=""></Image>
+          <Logo />
           <Span>Portfolio</Span>
         </a>
       </Link>
