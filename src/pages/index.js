@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <Layout>
       <Section grid>
-        <Hero />
+        <Hero handleClick={() => window.open("", "_blank")}/>
       </Section>
     </Layout>
   );
