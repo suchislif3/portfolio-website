@@ -1,3 +1,8 @@
+## Project
+
+This is going to be my first portfolio website. I decided to use NextJS and styled components, in order to learn something new, while making it.
+The project is based on [this tutorial](https://www.youtube.com/watch?v=OPaLnMw2i_0) with the intention to make it my own.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
