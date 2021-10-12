@@ -17,7 +17,7 @@ const Hero = (props) => (
       </SectionTitle>
       <SoftDevAnimation />
       <SectionText>
-        <i>I don&apos;t stop until I find a solution.</i>
+        <i>I don&apos;t stop until I find an elegant solution.</i>
       </SectionText>
       <Button onClick={props.handleClick}>Learn More</Button>
     </LeftSection>
