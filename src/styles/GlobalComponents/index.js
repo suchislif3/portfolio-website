@@ -72,6 +72,25 @@ export const SectionText = styled.p`
   }
 `;
 
+export const SectionDivider = styled.div`
+  width: 64px;
+  height: 6px;
+  border-radius: 10px;
+  background-color: #fff;
+  background: ${(props) => props.colorAlt ? 
+    'linear-gradient(270deg, #F46737 0%, #945DD6 100%)' :
+    'linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)'};
+    margin: ${(props) => props.divider ? "4rem 0" : "" };
+  @media ${(props) => props.theme.breakpoints.md} {
+    width: 48px;
+    height: 4px;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 32px;
+    height: 2px;
+  }
+`;
+
 export const ButtonBack = styled.div`
   width: ${({ alt }) => (alt ? "150px" : "262px")};
   height: ${({ alt }) => (alt ? "52px" : "64px")};

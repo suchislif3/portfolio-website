@@ -1,6 +1,7 @@
 import { Layout } from "../layout/Layout";
 import { Section } from "../styles/GlobalComponents";
 import Hero from "../components/Hero/Hero";
+import Projects from '../components/Projects/Projects';
 
 const Home = () => {
   return (
@@ -8,6 +9,7 @@ const Home = () => {
       <Section grid>
         <Hero handleClick={() => window.open("", "_blank")}/>
       </Section>
+      <Projects />
     </Layout>
   );
 };
