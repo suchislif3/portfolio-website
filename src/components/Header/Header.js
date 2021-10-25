@@ -17,7 +17,10 @@ const Header = () => (
   <Container>
     <Div1>
       <Link href="/">
-        <a style={{ display: "flex", alignItems: "center", color: "white" }}>
+        <a
+          title="home"
+          style={{ display: "flex", alignItems: "center", color: "white" }}
+        >
           <Logo />
           <Span>Portfolio</Span>
         </a>
@@ -26,27 +29,32 @@ const Header = () => (
     <Div2>
       <li>
         <Link href="#projects" passHref>
-          <NavLink>Projects</NavLink>
+          <NavLink title="projects">Projects</NavLink>
         </Link>
       </li>
       <li>
         <Link href="#technologies" passHref>
-          <NavLink>Technologies</NavLink>
+          <NavLink title="technologies">Technologies</NavLink>
         </Link>
       </li>
       <li>
         <Link href="#about" passHref>
-          <NavLink>About</NavLink>
+          <NavLink title="about">About</NavLink>
         </Link>
       </li>
     </Div2>
     <Div3>
-      <SocialIcons href="https://github.com/suchislif3" target="_blank">
+      <SocialIcons
+        href="https://github.com/suchislif3"
+        target="_blank"
+        title="suchislif3 on GitHub"
+      >
         <AiFillGithub size="3rem" />
       </SocialIcons>
       <SocialIcons
         href="https://www.linkedin.com/in/szabolcs-devecseri/"
         target="_blank"
+        title="Szabolcs Devecseri on LinkedIn"
       >
         <AiFillLinkedin size="3rem" />
       </SocialIcons>
