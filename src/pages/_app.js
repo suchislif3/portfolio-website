@@ -6,7 +6,7 @@ function App({ Component, pageProps }) {
   return (
     <Fragment>
       <Head>
-        <title>Portfolio - Szabolcs Devecseri [Junior Software Developer]</title>
+        <title>Szabolcs Devecseri</title>
       </Head>
       <Theme>
         <Component {...pageProps} />
