@@ -23,7 +23,6 @@ import { projects } from "../../constants/constants";
 const Projects = () => {
   return (
     <Section nopadding id="projects">
-      <SectionDivider />
       <SectionTitle main>Projects</SectionTitle>
       <GridContainer>
         {projects.map(({image, title, description, tags, visit, source}, i) => {
@@ -44,10 +43,10 @@ const Projects = () => {
                 </TagList>
               </div>
               <UtilityList>
-                <ExternalLinks href={visit} target="_blank">
+                <ExternalLinks href={visit} target="_blank" title={`${title}'s code`}>
                   Code
                 </ExternalLinks>
-                <ExternalLinks href={source} target="_blank">
+                <ExternalLinks href={source} target="_blank" title={title}>
                   Source
                 </ExternalLinks>
               </UtilityList>
@@ -55,6 +54,7 @@ const Projects = () => {
           );
         })}
       </GridContainer>
+      <SectionDivider />
     </Section>
   );
 };
