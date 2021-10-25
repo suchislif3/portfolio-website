@@ -26,28 +26,28 @@ const Projects = () => {
       <SectionDivider />
       <SectionTitle main>Projects</SectionTitle>
       <GridContainer>
-        {projects.map((p, i) => {
+        {projects.map(({image, title, description, tags, visit, source}, i) => {
           return (
             <BlogCard key={i}>
-              <Img src={p.image} />
+              <Img src={image} />
               <TitleContent>
-                <HeaderThree title>{p.title}</HeaderThree>
+                <HeaderThree title>{title}</HeaderThree>
                 <Hr />
               </TitleContent>
-              <CardInfo className="card-info">{p.description}</CardInfo>
+              <CardInfo className="card-info">{description}</CardInfo>
               <div>
                 <TitleContent>Stack</TitleContent>
                 <TagList>
-                  {p.tags.map((t, i) => {
+                  {tags.map((t, i) => {
                     return <Tag key={i}>{t}</Tag>;
                   })}
                 </TagList>
               </div>
               <UtilityList>
-                <ExternalLinks href={p.visit} target="_blank">
+                <ExternalLinks href={visit} target="_blank">
                   Code
                 </ExternalLinks>
-                <ExternalLinks href={p.source} target="_blank">
+                <ExternalLinks href={source} target="_blank">
                   Source
                 </ExternalLinks>
               </UtilityList>
