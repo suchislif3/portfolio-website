@@ -25,34 +25,40 @@ const Projects = () => {
     <Section nopadding id="projects">
       <SectionTitle main>Projects</SectionTitle>
       <GridContainer>
-        {projects.map(({image, title, description, tags, visit, source}, i) => {
-          return (
-            <BlogCard key={i}>
-              <Img src={image} />
-              <TitleContent>
-                <HeaderThree title>{title}</HeaderThree>
-                <Hr />
-              </TitleContent>
-              <CardInfo className="card-info">{description}</CardInfo>
-              <div>
-                <TitleContent>Stack</TitleContent>
-                <TagList>
-                  {tags.map((t, i) => {
-                    return <Tag key={i}>{t}</Tag>;
-                  })}
-                </TagList>
-              </div>
-              <UtilityList>
-                <ExternalLinks href={visit} target="_blank" title={`${title}'s code`}>
-                  Code
-                </ExternalLinks>
-                <ExternalLinks href={source} target="_blank" title={title}>
-                  Source
-                </ExternalLinks>
-              </UtilityList>
-            </BlogCard>
-          );
-        })}
+        {projects.map(
+          ({ image, title, description, tags, visit, source }, i) => {
+            return (
+              <BlogCard key={i}>
+                <Img src={image} />
+                <TitleContent>
+                  <HeaderThree title>{title}</HeaderThree>
+                  <Hr />
+                </TitleContent>
+                <CardInfo className="card-info">{description}</CardInfo>
+                <div>
+                  <TitleContent>Stack</TitleContent>
+                  <TagList>
+                    {tags.map((t, i) => {
+                      return <Tag key={i}>{t}</Tag>;
+                    })}
+                  </TagList>
+                </div>
+                <UtilityList>
+                  <ExternalLinks
+                    href={visit}
+                    target="_blank"
+                    title={`${title}'s code`}
+                  >
+                    Code
+                  </ExternalLinks>
+                  <ExternalLinks href={source} target="_blank" title={title}>
+                    Source
+                  </ExternalLinks>
+                </UtilityList>
+              </BlogCard>
+            );
+          }
+        )}
       </GridContainer>
       <SectionDivider />
     </Section>
