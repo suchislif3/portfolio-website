@@ -22,7 +22,7 @@ import { projects } from "../../constants/constants";
 
 const Projects = () => {
   return (
-    <Section nopadding id="projects">
+    <Section id="projects">
       <SectionTitle main>Projects</SectionTitle>
       <GridContainer>
         {projects.map(

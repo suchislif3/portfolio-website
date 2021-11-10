@@ -1,15 +1,12 @@
 import Link from "next/link";
 import React from "react";
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 import {
   Container,
   Span,
   Div1,
   Div2,
-  Div3,
   NavLink,
-  SocialIcons,
 } from "./HeaderStyles";
 import Logo from "./Logo";
 
@@ -43,22 +40,6 @@ const Header = () => (
         </Link>
       </li>
     </Div2>
-    <Div3>
-      <SocialIcons
-        href="https://github.com/suchislif3"
-        target="_blank"
-        title="suchislif3 on GitHub"
-      >
-        <AiFillGithub size="3rem" />
-      </SocialIcons>
-      <SocialIcons
-        href="https://www.linkedin.com/in/szabolcs-devecseri/"
-        target="_blank"
-        title="Szabolcs Devecseri on LinkedIn"
-      >
-        <AiFillLinkedin size="3rem" />
-      </SocialIcons>
-    </Div3>
   </Container>
 );
 

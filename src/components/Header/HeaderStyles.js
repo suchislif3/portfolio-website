@@ -61,17 +61,6 @@ export const Div2 = styled.div`
   }
 `;
 
-export const Div3 = styled.div`
-  grid-area: 1 / 6 / 2 / 7;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  @media ${({ theme }) => theme.breakpoints.sm} {
-    align-items: center;
-    grid-area: 1 / 5 / 2 / 7;
-  }
-`;
-
 export const NavLink = styled.a`
   font-size: 2rem;
   line-height: 32px;
@@ -133,14 +122,3 @@ export const NavLink = styled.a`
     width: 15px;
   }
 `; */
-
-export const SocialIcons = styled.a`
-  transition: 0.3s ease;
-  color: white;
-  border-radius: 50px;
-  padding: 4px;
-  &:hover {
-    transform: scale(1.2);
-    cursor: pointer;
-  }
-`;
