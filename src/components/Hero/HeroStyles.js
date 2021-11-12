@@ -59,7 +59,7 @@ export const DynamicTexts = styled.ul`
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: ${({theme}) => theme.colors.background1};
+    background-color: ${({theme}) => theme.colors.background2};
     border-left: 2px solid white;
     animation: typing 7s cubic-bezier(0.2, 0.8, 0, 1) infinite;
   }

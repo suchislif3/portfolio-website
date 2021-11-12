@@ -3,7 +3,7 @@ import styled, { keyframes } from "styled-components";
 
 export const Container = styled.div`
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 2rem;
   padding: 1rem;
@@ -52,7 +52,7 @@ export const Div1 = styled.div`
 `;
 
 export const Div2 = styled.div`
-  grid-area: 1 / 2 / 2 / 5;
+  grid-area: 1 / 3 / 2 / 6;
   display: flex;
   justify-content: space-around;
   align-items: center;

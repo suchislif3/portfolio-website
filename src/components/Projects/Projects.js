@@ -15,7 +15,6 @@ import {
 } from "./ProjectsStyles";
 import {
   Section,
-  SectionDivider,
   SectionTitle,
 } from "../../styles/GlobalComponents";
 import { projects } from "../../constants/constants";
@@ -29,7 +28,7 @@ const Projects = () => {
           ({ image, title, description, tags, visit, source }, i) => {
             return (
               <BlogCard key={i}>
-                <Img src={image} />
+                <Img src={image} alt={`${title}'s image`} />
                 <TitleContent>
                   <HeaderThree isTitle>{title}</HeaderThree>
                   <Hr />
@@ -60,7 +59,6 @@ const Projects = () => {
           }
         )}
       </GridContainer>
-      <SectionDivider />
     </Section>
   );
 };

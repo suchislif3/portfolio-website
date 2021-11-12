@@ -8,35 +8,32 @@ import {
   Div2,
   NavLink,
 } from "./HeaderStyles";
-import Logo from "./Logo";
 
 const Header = () => (
   <Container>
     <Div1>
       <Link href="/">
         <a
-          title="home"
           style={{ display: "flex", alignItems: "center", color: "white" }}
         >
-          <Logo />
-          <Span>Portfolio</Span>
+          <Span>Szabolcs Devecseri</Span>
         </a>
       </Link>
     </Div1>
     <Div2>
       <li>
         <Link href="#projects" passHref>
-          <NavLink title="projects">Projects</NavLink>
+          <NavLink title="projects">projects</NavLink>
         </Link>
       </li>
       <li>
         <Link href="#technologies" passHref>
-          <NavLink title="technologies">Technologies</NavLink>
+          <NavLink title="technologies">technologies</NavLink>
         </Link>
       </li>
       <li>
         <Link href="#about" passHref>
-          <NavLink title="about">About</NavLink>
+          <NavLink title="about">about</NavLink>
         </Link>
       </li>
     </Div2>

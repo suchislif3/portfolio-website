@@ -47,7 +47,7 @@ export const projects = [
 
 export const technologies = [
   {
-    name: "Git, GitHub",
+    name: "Git",
     icon: DiGit,
   },
   {
@@ -79,7 +79,7 @@ export const technologies = [
     icon: SiJest,
   },
   {
-    name: "Jira, Scrum",
+    name: "Jira (Scrum)",
     icon: FaJira,
   },
 ];

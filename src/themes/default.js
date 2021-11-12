@@ -1,7 +1,7 @@
 const MyTheme = {
   fonts: {
-    title: "Raleway, sans-serif",
-    main: "Raleway, sans-serif",
+    title: "Poppins, sans-serif",
+    main: "Poppins, sans-serif",
   },
   colors: {
     primary1: "hsl(204,23.8%,95.9%)",
@@ -10,7 +10,7 @@ const MyTheme = {
     /* accent1: "hsl(34.9,98.6%,72.9%)", */
     /* secondary1: "#F2C400", */
     button: "hsl(205.1,100%,36.1%)",
-    background2: "hsl(232.7,27.3%,23.7%)",
+    background2: "rgb(26, 58, 67)",
   },
   breakpoints: {
     sm: "screen and (max-width: 640px)",

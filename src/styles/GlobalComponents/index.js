@@ -1,12 +1,14 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
+  background-color: rgb(26, 58, 67);
   display: ${({ grid }) => (grid ? "grid" : "flex")};
   flex-direction: ${({ row }) => (row ? "row" : "column")};
   padding: ${({ nopadding }) => (nopadding ? "0" : "32px 48px 0")};
-  margin: 0 auto;
+  margin: 5% auto 10%;
   max-width: 1040px;
   box-sizing: content-box;
+  border-radius: 10px;
   position: relative;
   overflow: hidden;
   grid-template-columns: 1fr 1fr;
@@ -69,26 +71,6 @@ export const SectionText = styled.p`
     font-size: 16px;
     line-height: 24px;
     padding-bottom: 16px;
-  }
-`;
-
-export const SectionDivider = styled.div`
-  width: 64px;
-  height: 6px;
-  border-radius: 10px;
-  background-color: #fff;
-  background: ${(props) =>
-    props.colorAlt
-      ? "linear-gradient(270deg, #F46737 0%, #945DD6 100%)"
-      : "linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)"};
-  margin: 4rem 0;
-  @media ${(props) => props.theme.breakpoints.md} {
-    width: 48px;
-    height: 4px;
-  }
-  @media ${(props) => props.theme.breakpoints.sm} {
-    width: 32px;
-    height: 2px;
   }
 `;
 

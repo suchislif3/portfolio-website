@@ -12,14 +12,14 @@ const SocialItems = () => {
         target="_blank"
         title="suchislif3 on GitHub"
       >
-        <AiFillGithub size="3rem" />
+        <AiFillGithub size="4em" />
       </SocialIcons>
       <SocialIcons
         href="https://www.linkedin.com/in/szabolcs-devecseri/"
         target="_blank"
         title="Szabolcs Devecseri on LinkedIn"
       >
-        <AiFillLinkedin size="3rem" />
+        <AiFillLinkedin size="4em" />
       </SocialIcons>
     </Div>
    );
