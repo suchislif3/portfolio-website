@@ -23,9 +23,14 @@ export const GridContainer = styled.section`
 `;
 export const BlogCard = styled.div`
   border-radius: 10px;
-  box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
+  box-shadow: 1px 1px 10px rgba(80, 78, 78, 0.5);
   text-align: center;
   width: 400px;
+  opacity: 0.9;
+  &:hover {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
   }
@@ -39,9 +44,15 @@ export const TitleContent = styled.div`
 export const HeaderThree = styled.h3`
   font-weight: 500;
   letter-spacing: 2px;
-  color: #9cc9e3;
+  color: ${({ theme }) => theme.colors.primary1_light};
   padding: 0.5rem 0;
   font-size: ${(props) => (props.isTitle ? "3rem" : "2rem")};
+`;
+export const HeaderFour = styled.h4`
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: ${({ theme }) => theme.colors.secondary1_light};
+  margin: 3rem 0 2rem;
 `;
 
 export const Hr = styled.hr`
@@ -49,23 +60,13 @@ export const Hr = styled.hr`
   height: 3px;
   margin: 20px auto;
   border: 0;
-  background: #d0bb57;
-`;
-
-export const Intro = styled.div`
-  width: 170px;
-  margin: 0 auto;
-  color: #dce3e7;
-  font-family: "Droid Serif", serif;
-  font-size: 13px;
-  font-style: italic;
-  line-height: 18px;
+  background: ${({ theme }) => theme.colors.secondary1_light}; ;
 `;
 
 export const CardInfo = styled.p`
   width: 100%;
-  padding: 0 50px;
-  color: #e4e6e7;
+  padding: 10px 50px;
+  opacity: 70%;
   font-style: 2rem;
   line-height: 24px;
   text-align: justify;
@@ -83,23 +84,23 @@ export const UtilityList = styled.ul`
 `;
 
 export const ExternalLinks = styled.a`
-  color: #d4c0c0;
+  color: ${({ theme }) => theme.colors.neutral};
   font-size: 1.6rem;
   padding: 1rem 1.5rem;
-  background: #6b3030;
+  background: ${({ theme }) => theme.colors.secondary2_neutral};
   border-radius: 15px;
   transition: 0.5s;
   &:hover {
-    background: #801414;
+    background: ${({ theme }) => theme.colors.secondary2_light};
   }
 `;
 
 export const TagList = styled.ul`
   display: flex;
   justify-content: space-around;
-  padding: 2rem;
+  margin: 2rem;
 `;
 export const Tag = styled.li`
-  color: #d8bfbf;
+  color: ${({ theme }) => theme.colors.secondary1_light};
   font-size: 1.5rem;
 `;

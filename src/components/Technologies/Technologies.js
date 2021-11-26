@@ -9,7 +9,7 @@ import { technologies } from "../../constants/constants";
 
 const Technologies = () => (
   <Section id="technologies">
-    <SectionTitle>Technologies</SectionTitle>
+    <SectionTitle main>technologies</SectionTitle>
     <SectionText>
       These are the technologies I&apos;ve worked with in the web development
       world, from backend to frontend.

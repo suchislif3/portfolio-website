@@ -6,6 +6,7 @@ import {
   ExternalLinks,
   GridContainer,
   HeaderThree,
+  HeaderFour,
   Hr,
   Tag,
   TagList,
@@ -13,16 +14,13 @@ import {
   UtilityList,
   Img,
 } from "./ProjectsStyles";
-import {
-  Section,
-  SectionTitle,
-} from "../../styles/GlobalComponents";
+import { Section, SectionTitle } from "../../styles/GlobalComponents";
 import { projects } from "../../constants/constants";
 
 const Projects = () => {
   return (
     <Section id="projects">
-      <SectionTitle main>Projects</SectionTitle>
+      <SectionTitle main>projects</SectionTitle>
       <GridContainer>
         {projects.map(
           ({ image, title, description, tags, visit, source }, i) => {
@@ -35,7 +33,9 @@ const Projects = () => {
                 </TitleContent>
                 <CardInfo className="card-info">{description}</CardInfo>
                 <div>
-                  <TitleContent>Stack</TitleContent>
+                  <TitleContent>
+                    <HeaderFour>Stack</HeaderFour>
+                  </TitleContent>
                   <TagList>
                     {tags.map((t, i) => {
                       return <Tag key={i}>{t}</Tag>;

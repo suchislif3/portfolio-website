@@ -20,7 +20,7 @@ export const SocialIcons = styled.a`
   padding: 4px;
   &:hover {
     cursor: pointer;
-    color: #008282;
+    color: ${({ theme }) => theme.colors.primary1_light};;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 0.8rem;

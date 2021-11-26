@@ -15,11 +15,23 @@ const GlobalStyles = createGlobalStyle`
   body {
     font-family: ${({ theme }) => theme.fonts.main};
     font-size: 1.6rem;
-    background: ${({ theme }) => theme.colors.background1};
-    background-image: radial-gradient(circle at center center, transparent,rgb(0,36,46)),repeating-linear-gradient(318deg, rgb(0,36,46) 0px, rgb(0,36,46) 2px,transparent 2px, transparent 10px,rgb(0,36,46) 10px, rgb(0,36,46) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(228deg, rgb(0,60,77) 0px, rgb(0,60,77) 4px,transparent 4px, transparent 8px),linear-gradient(273deg, rgb(0,36,46),rgb(0,36,46));
-    color: ${({ theme }) => theme.colors.primary1};
+    background-image: linear-gradient(135deg, rgba(57, 57, 57, 0.04) 0%, rgba(57, 57, 57, 0.04) 37%,rgba(143, 143, 143, 0.04) 37%, rgba(143, 143, 143, 0.04) 100%),linear-gradient(45deg, rgba(11, 11, 11, 0.04) 0%, rgba(11, 11, 11, 0.04) 30%,rgba(166, 166, 166, 0.04) 30%, rgba(166, 166, 166, 0.04) 100%),linear-gradient(90deg, rgba(231, 231, 231, 0.04) 0%, rgba(231, 231, 231, 0.04) 63%,rgba(193, 193, 193, 0.04) 63%, rgba(193, 193, 193, 0.04) 100%),linear-gradient(0deg, rgba(162, 162, 162, 0.04) 0%, rgba(162, 162, 162, 0.04) 14%,rgba(210, 210, 210, 0.04) 14%, rgba(210, 210, 210, 0.04) 100%),linear-gradient(90deg, rgb(0,36,46),rgb(62,0,28));
+    background-size: 200%;
+    animation: bg-animation 40s infinite alternate ease-in-out;
+    background-attachment: fixed; 
+    color: ${({ theme }) => theme.colors.neutral};
     cursor: default;
   }
+
+  @keyframes bg-animation {
+    0% { 
+      background-position: left;
+    }
+    100% {
+      background-position: right;
+    }
+  }
+
   h1,h2,h3,h4,h5,h6,button {
     font-family: ${({ theme }) => theme.fonts.title};
   }
