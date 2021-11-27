@@ -4,9 +4,6 @@ const MyTheme = {
     main: "Poppins, sans-serif",
   },
   colors: {
-    primary1: "hsl(204,23.8%,95.9%)",
-    primary2: "#ABEDFF",
-    
     neutral: "hsl(204,23.8%,95.9%)",
     
     primary1_light: "#008282",

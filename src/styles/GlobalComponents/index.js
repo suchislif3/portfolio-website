@@ -46,7 +46,6 @@ export const SectionTitle = styled.h2`
 `;
 
 export const SectionText = styled.p`
-  max-width: 800px;
   font-size: 24px;
   line-height: 40px;
   font-weight: 300;
@@ -64,17 +63,4 @@ export const SectionText = styled.p`
     line-height: 24px;
     padding-bottom: 16px;
   }
-`;
-
-export const TypeWriterSpan = styled.span`
-  &:after {
-    content: "|";
-    animation: blink 1s step-start infinite;
-  }
-
-  @keyframes blink {
-    50% {
-      opacity: 0;
-    }
-  };
 `;

@@ -1,4 +1,4 @@
-import { TypeWriterSpan } from "../../styles/GlobalComponents";
+import { TypeWriterSpan } from "./TypeWriterStyles";
 import { useTypeText } from "./useTypeText";
 
 const TypeWriter = ({

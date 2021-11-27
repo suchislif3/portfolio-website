@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  position: fixed; 
+  position: fixed;
   bottom: 90px;
   right: 0;
   z-index: 999;
@@ -13,11 +13,11 @@ export const ScrollIcon = styled.div`
   animation: fadeIn 0.3s;
   transition: 0.4s ease;
   opacity: 0.5;
-  
+
   &:hover {
     cursor: pointer;
     opacity: 1;
-  };
+  }
 
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 0.8rem;

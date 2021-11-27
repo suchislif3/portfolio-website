@@ -1,21 +1,13 @@
 import Link from "next/link";
 import React from "react";
 
-import {
-  Container,
-  Span,
-  Div1,
-  Div2,
-  NavLink,
-} from "./HeaderStyles";
+import { Container, Span, Div1, Div2, NavLink } from "./HeaderStyles";
 
 const Header = () => (
   <Container>
     <Div1>
       <Link href="/">
-        <a
-          style={{ display: "flex", alignItems: "center", color: "white" }}
-        >
+        <a style={{ display: "flex", alignItems: "center", color: "white" }}>
           <Span>Szabolcs Devecseri</Span>
         </a>
       </Link>

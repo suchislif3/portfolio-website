@@ -14,13 +14,13 @@ export const Div = styled.div`
 export const SocialIcons = styled.a`
   display: block;
   transition: 0.3s ease;
-  color: white;
+  color: ${({ theme }) => theme.colors.neutral};
   font-size: 1rem;
   border-radius: 50px;
   padding: 4px;
   &:hover {
     cursor: pointer;
-    color: ${({ theme }) => theme.colors.primary1_light};;
+    color: ${({ theme }) => theme.colors.primary1_light};
   }
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 0.8rem;

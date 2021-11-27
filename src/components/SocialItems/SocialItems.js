@@ -1,11 +1,8 @@
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-import {
-  Div,
-  SocialIcons,
-} from "./SocialItemsStyles";
+import { Div, SocialIcons } from "./SocialItemsStyles";
 
 const SocialItems = () => {
-  return ( 
+  return (
     <Div>
       <SocialIcons
         href="https://github.com/suchislif3"
@@ -22,7 +19,7 @@ const SocialItems = () => {
         <AiFillLinkedin size="4em" />
       </SocialIcons>
     </Div>
-   );
-}
- 
+  );
+};
+
 export default SocialItems;

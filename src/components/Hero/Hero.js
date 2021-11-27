@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { SectionText, SectionTitle } from "../../styles/GlobalComponents";
 import { LeftSection, Wrapper, StaticText, DynamicTexts } from "./HeroStyles";
-import TypeWriter from "./TypeWriter";
+import TypeWriter from "../TypeWriter/TypeWriter";
 
 const phases = {
   TYPING: "typing",
@@ -10,7 +10,7 @@ const phases = {
 };
 const MS = {
   typing: 1500,
-  pausing: 5000,
+  pausing: 3000,
   deleting: 1200,
 };
 

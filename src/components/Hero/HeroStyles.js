@@ -26,8 +26,8 @@ export const StaticText = styled.div`
   line-height: 90px;
   height: 90px;
   font-size: 60px;
-  font-weight: 400;
-  color: ${({ theme }) => theme.colors.secondary2_light};
+  font-weight: 500;
+  color: ${({ theme }) => theme.colors.primary1_light};
 
   @media ${({ theme }) => theme.breakpoints.md} {
     line-height: 70px;
@@ -47,6 +47,7 @@ export const DynamicTexts = styled.ul`
   height: ${({ small }) => (small ? "45px" : "90px")};
   font-size: ${({ small }) => (small ? "30px" : "60px")};
   font-weight: 400;
+  opacity: 70%;
 
   @media ${({ theme }) => theme.breakpoints.md} {
     line-height: ${({ small }) => (small ? "35px" : "70px")};
