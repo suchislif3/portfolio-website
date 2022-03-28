@@ -20,6 +20,16 @@ export const projects = [
     visit: "/",
     id: 0,
   },
+  {
+    title: "Memory Game",
+    description:
+      "A memory game built with React, where the user can select the difficulty level by setting the grid size (4 to 36 cards) and choose from 3 different themes.",
+    image: "/images/2.png",
+    tags: ["React"],
+    code: "https://github.com/suchislif3/memory-game",
+    visit: "https://suchislif3.github.io/memory-game/",
+    id: 1,
+  },
 ];
 
 export const technologies = [
