@@ -30,6 +30,16 @@ export const projects = [
     visit: "https://suchislif3.github.io/memory-game/",
     id: 1,
   },
+  {
+    title: "Gamories",
+    description:
+      "Gaming memories - The project I am currently working on: a full stack MERN social media app for gamers, to share their most interesting moments.",
+    image: "/images/under_construction.png",
+    tags: ["MongoDB", "Express", "React", "NodeJS"],
+    code: "https://github.com/suchislif3/gamories/tree/dev",
+    visit: "",
+    id: 2,
+  },
 ];
 
 export const technologies = [
