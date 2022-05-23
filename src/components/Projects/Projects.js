@@ -50,7 +50,7 @@ const Projects = () => {
                   target="_blank"
                   title={`${title}'s code`}
                 >
-                  Source code
+                  {visit ? "Source" : "Dev"} code
                 </ExternalLinks>
               </UtilityList>
             </BlogCard>
