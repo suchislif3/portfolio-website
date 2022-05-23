@@ -16,7 +16,7 @@ export const projects = [
       "The project I am currently working on to refresh and improve my TypeScript skills.",
     image: "/images/under_construction.png",
     tags: ["React", "TypeScript"],
-    code: "https://github.com/suchislif3/quiz-app",
+    code: "https://github.com/suchislif3/quiz-app/tree/dev",
     id: 3,
   },
   {
