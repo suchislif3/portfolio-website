@@ -11,6 +11,15 @@ import { FaJira } from "react-icons/fa";
 
 export const projects = [
   {
+    title: "Quiz-App",
+    description:
+      "The project I am currently working on to refresh and improve my TypeScript skills.",
+    image: "/images/under_construction.png",
+    tags: ["React", "TypeScript"],
+    code: "https://github.com/suchislif3/quiz-app",
+    id: 3,
+  },
+  {
     title: "gamories",
     description:
       "Your best gaming memories - social media app for gamers, to share their most interesting moments. Sign up or sign in with Google. Share your gamories including uploading an image. Edit, delete, like, and comment posts. Search in posts. Switch between dark and light mode. And scroll infinitely. :)",
