@@ -17,8 +17,7 @@ export const GridContainer = styled.section`
   @media ${(props) => props.theme.breakpoints.sm} {
     display: flex;
     flex-direction: column;
-    padding: 2rem;
-    padding-bottom: 0;
+    padding: 0;
   }
 `;
 
@@ -73,7 +72,6 @@ export const CardInfo = styled.p`
   width: 100%;
   padding: 10px 50px;
   opacity: 70%;
-  font-style: 2rem;
   line-height: 24px;
   text-align: justify;
   @media ${(props) => props.theme.breakpoints.sm} {
@@ -99,12 +97,19 @@ export const ExternalLinks = styled.a`
   &:hover {
     background: ${({ theme }) => theme.colors.secondary2_light};
   }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    padding: 0.7rem;
+  }
 `;
 
 export const TagList = styled.ul`
   display: flex;
   justify-content: space-around;
   margin: 2rem;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
 `;
 
 export const Tag = styled.li`
