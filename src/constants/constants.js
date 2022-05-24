@@ -6,7 +6,7 @@ import {
   DiReact,
   DiNodejs,
 } from "react-icons/di";
-import { SiMongodb, SiMysql, SiJest } from "react-icons/si";
+import { SiTypescript, SiMongodb, SiMysql, SiJest } from "react-icons/si";
 import { FaJira } from "react-icons/fa";
 
 export const projects = [
@@ -67,6 +67,10 @@ export const technologies = [
   {
     name: "JavaScript",
     icon: DiJavascript,
+  },
+  {
+    name: "TypeScript",
+    icon: SiTypescript,
   },
   {
     name: "React",
