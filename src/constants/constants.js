@@ -13,10 +13,11 @@ export const projects = [
   {
     title: "Quiz-App",
     description:
-      "The project I am currently working on to refresh and improve my TypeScript skills.",
-    image: "/images/under_construction.png",
+      "Put yourself to the test in the category of your choice and on different difficulty levels in this quiz app, which uses the Open Trivia DB API.",
+    image: "/images/3.png",
     tags: ["React", "TypeScript"],
-    code: "https://github.com/suchislif3/quiz-app/tree/dev",
+    code: "https://github.com/suchislif3/quiz-app/",
+    visit: "https://quiz-app-suchislif3.vercel.app/",
     id: 3,
   },
   {
