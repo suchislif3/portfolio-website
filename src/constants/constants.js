@@ -11,6 +11,15 @@ import { FaJira } from "react-icons/fa";
 
 export const projects = [
   {
+    title: "Jobtrapp",
+    description:
+      "I currently work on this project. You can track your job applications with this MERN app.",
+    image: "/images/under_construction.png",
+    tags: ["MongoDB", "Express", "React", "NodeJS"],
+    code: "https://github.com/suchislif3/jobs-app/tree/dev",
+    id: 4,
+  },
+  {
     title: "Quiz-App",
     description:
       "Put yourself to the test in the category of your choice and on different difficulty levels in this quiz app, which uses the Open Trivia DB API.",
