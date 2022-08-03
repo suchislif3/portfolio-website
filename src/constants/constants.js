@@ -13,10 +13,11 @@ export const projects = [
   {
     title: "Jobtrapp",
     description:
-      "I currently work on this project. You can track your job applications with this MERN app.",
-    image: "/images/under_construction.png",
+      "Track your job applications with this MERN app. Add, edit or delete your jobs, and sort them in the desired order using drag and drop, which also supports responsive design.",
+    image: "/images/4.png",
     tags: ["MongoDB", "Express", "React", "NodeJS"],
-    code: "https://github.com/suchislif3/jobs-app/tree/dev",
+    code: "https://github.com/suchislif3/jobs-app/",
+    visit: "https://jobtrapp.vercel.app/",
     id: 4,
   },
   {
