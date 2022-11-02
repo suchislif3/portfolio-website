@@ -11,8 +11,7 @@ const Technologies = () => (
   <Section id="technologies">
     <SectionTitle main>technologies</SectionTitle>
     <SectionText>
-      These are the technologies I&apos;ve worked with in the web development
-      world, from backend to frontend.
+      These are the languages and technologies I&apos;ve worked with.
     </SectionText>
     <List>
       {technologies.map((technology, i) => {

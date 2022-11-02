@@ -7,7 +7,7 @@ import {
   DiNodejs,
 } from "react-icons/di";
 import { SiTypescript, SiMongodb, SiMysql, SiJest } from "react-icons/si";
-import { FaJira } from "react-icons/fa";
+import { FaJira, FaJava } from "react-icons/fa";
 
 export const projects = [
   {
@@ -106,5 +106,9 @@ export const technologies = [
   {
     name: "Jira (Scrum)",
     icon: FaJira,
+  },
+  {
+    name: "Java",
+    icon: FaJava,
   },
 ];
