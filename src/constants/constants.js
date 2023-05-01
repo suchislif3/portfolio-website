@@ -8,12 +8,13 @@ import {
 } from "react-icons/di";
 import { SiTypescript, SiMongodb, SiMysql, SiJest } from "react-icons/si";
 import { FaJira, FaJava } from "react-icons/fa";
+import { VscBlank } from "react-icons/vsc";
 
 export const projects = [
   {
     title: "Jobtrapp",
     description:
-      "Track your job applications with this MERN app. Add, edit or delete your jobs, and sort them in the desired order using drag and drop, which also supports responsive design.",
+      "Track your job applications with this MERN app. Add, edit or delete your jobs, and sort them in the desired order using drag and drop, which also supports responsive design. (Backend is currently unavailable.)",
     image: "/images/4.png",
     tags: ["MongoDB", "Express", "React", "NodeJS"],
     code: "https://github.com/suchislif3/jobs-app/",
@@ -106,6 +107,10 @@ export const technologies = [
   {
     name: "Jira (Scrum)",
     icon: FaJira,
+  },
+  {
+    name: "webMethods",
+    icon: VscBlank,
   },
   {
     name: "Java",
